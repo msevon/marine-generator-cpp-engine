@@ -4,12 +4,12 @@ A C++17 simulation engine for modeling marine generator behavior with realistic 
 
 ## Features
 
-- **Realistic Generator Simulation**: Models generator states (STOPPED, STARTING, RUNNING, STOPPING, FAULT)
-- **Sensor Simulation**: RPM, voltage, frequency, temperature, oil pressure, fuel level with noise and drift
-- **Load Management**: Dynamic load control with minimum 20% requirement when running
-- **Alarm System**: Threshold-based alarms for critical parameters
-- **TCP Socket Server**: JSON-based communication protocol for external clients
-- **Real-time Updates**: Continuous simulation loop with configurable update rates
+- **Realistic generator simulation**: Models generator states (STOPPED, STARTING, RUNNING, STOPPING, FAULT)
+- **Sensor simulation**: RPM, voltage, frequency, temperature, oil pressure, fuel level with noise and drift
+- **Load management**: Dynamic load control with minimum 20% requirement when running
+- **Alarm system**: Threshold-based alarms for critical parameters
+- **TCP socket server**: JSON-based communication protocol for external clients
+- **Real-time updates**: Continuous simulation loop with configurable update rates
 
 ## Project Structure
 
@@ -29,7 +29,7 @@ engine/
 ## Requirements
 
 - **Compiler**: C++17 compatible (MSVC 2017+, GCC 7+, Clang 5+)
-- **Build System**: CMake 3.10+
+- **Build system**: CMake 3.10+
 - **Platform**: Windows, Linux, macOS
 - **Dependencies**: Standard library only (no external dependencies)
 
@@ -70,7 +70,7 @@ After building, the executable will be in `build/bin/Release/` (Windows) or `bui
 
 The engine will start a TCP server on port 8081.
 
-## Communication Protocol
+## Communication protocol
 
 The engine accepts simple text commands over TCP:
 
@@ -80,7 +80,7 @@ The engine accepts simple text commands over TCP:
 - `set_load <percentage>` - Set load (20-100% when running)
 - `status` - Get current status
 
-### Status Response Format
+### Status response format
 
 ```json
 {
@@ -99,7 +99,7 @@ The engine accepts simple text commands over TCP:
 }
 ```
 
-### State Values
+### State values
 - `0`: STOPPED
 - `1`: STARTING
 - `2`: RUNNING
@@ -125,7 +125,7 @@ echo "status" | nc localhost 8081
 echo "set_load 75" | nc localhost 8081
 ```
 
-## Development Status
+## Development status
 
 - Complete generator state machine
 - Realistic sensor simulation
@@ -134,7 +134,7 @@ echo "set_load 75" | nc localhost 8081
 - Alarm handling
 - Cross-platform compatibility
 
-## Future Enhancements
+## Future enhancements
 
 - Multiple generator support
 - Data logging and export
