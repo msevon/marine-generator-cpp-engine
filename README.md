@@ -2,6 +2,8 @@
 
 A C++17 simulation engine for modeling marine generator behavior with realistic sensor simulation and TCP socket communication.
 
+![gui](gui.png)
+
 ## Features
 
 - **Realistic generator simulation**: Models generator states (STOPPED, STARTING, RUNNING, STOPPING, FAULT)
