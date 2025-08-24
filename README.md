@@ -4,7 +4,7 @@ A C++17 simulation engine for modeling marine generator behavior with realistic 
 
 ![gui](gui.png)
 
-*gui under development
+*GUI under development
 
 ## Features
 
