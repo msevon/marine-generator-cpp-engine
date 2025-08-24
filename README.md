@@ -4,6 +4,8 @@ A C++17 simulation engine for modeling marine generator behavior with realistic 
 
 ![gui](gui.png)
 
+*gui under development
+
 ## Features
 
 - **Realistic generator simulation**: Models generator states (STOPPED, STARTING, RUNNING, STOPPING, FAULT)
